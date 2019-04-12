@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kiểm tra lớp học</title>
+</head>
+<body>
+<script>
+    function checkClass(className) {
+        regExp = /^[CAP][0-9]{4}[GHIKLM]$/;
+        if (regExp.test(className)) {
+            return true;
+        } else return false;
+    }
+    let class1 = 'C0318G';
+    let class2 = 'ABCDEF';
+
+    console.log(checkClass(class1));
+    console.log(checkClass(class2));
+</script>
+</body>
+</html>
